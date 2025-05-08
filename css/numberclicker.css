@@ -1,0 +1,23 @@
+
+.number-disp {
+    text-align: center;
+    font-size: 10rem;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #588ebe;
+}
+
+.btn {
+    border: none;
+    border-radius: 10px;
+    color: aliceblue;
+    background-color: #588ebe;
+    height: 2rem;
+    width: 4rem;
+    margin: 0px 10px;
+    padding: 5px 5px;
+    font-size: 1.2rem;
+}
+
+p {
+    color: #588ebe;
+}

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arrays Utility</title>
+    <link rel="shortcut icon" href="#">
+    <link rel="stylesheet" href="./css/arrays.css">
+    <link rel="stylesheet" href="./css/main.css">
+    <script src="./js/arrays.js" defer></script>
+</head>
+<body>
+
+    <nav class="nav-bar">
+        <a class="nav-link" href="./index.html">home</a>
+    </nav>
+    <main class="apps-container">
+        <h1 class="title">Dataset Generator</h1>
+        <div class="input-area">
+            <div class="in-container">  
+            <label>Set length:</label>
+            <input type="number" id="arr-len-in" max="1000" value="99" placeholder="n">
+            </div>
+            <div class="in-container">  
+            <label>Min value: </label>
+            <input type="number" id="min-val-in" value="1" placeholder="i">
+            </div>
+            <div class="in-container">  
+            <label>Max value: </label>
+            <input type="number" id="max-val-in" value="50" placeholder="j">
+            </div>
+        </div>
+        
+        <div>
+            <p class="rand-array" id="array"></p>
+        </div>
+        <div class="btns-area">
+            <button class="arr-btn" id="enter-btn">Enter</button>
+            <button class="arr-btn" id="clear-btn">Clear</button>
+        </div>
+        <div class="stats-area hide">
+            <p id="arr-length-txt"></p>
+            <p id="sm-num-txt"></p>
+            <p id="lrg-num-txt"></p>
+            <p id="rng-num-txt"></p>
+            <p id="sum-num-txt"></p>
+            <p id="avg-num-txt"></p>
+            <p id="sd-num-txt"></p>
+            <p id="vr-num-txt"></p>
+            <button id="copy-btn" class="sm-btn btn hide">Copy Array</button>
+        </div>
+        <p id="message"></p>
+    </main>
+</body>
+</html>

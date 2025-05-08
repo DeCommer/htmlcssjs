@@ -1,0 +1,97 @@
+.apps-container {
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.title {
+    color:#3b6080;
+}
+
+.array-area {
+    color: #3b6080;
+    font-size: 1.3rem;
+    text-align: center;
+    max-width: 550px;
+    max-height: 150px;
+    margin: 20px 0;
+    padding: 10px;
+   overflow-y: scroll;
+}
+
+.message {
+    font-size: .8rem;
+}
+
+.apps-container p {
+    font-size: 1.4rem;
+}
+
+input {
+    background-color: #a1c3e2;
+    border: 1px solid #3b6080;
+    color: #fff;
+    font-size: 1.2rem;
+    text-align: center;
+    padding: 3px 0;
+    width: 125px;
+}
+
+.input-area {
+    display: flex;
+    gap: 20px;
+}
+
+.in-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.btns-area {
+    margin-top: 10px;
+}
+
+.arr-btn {
+    background-color: #3b6080;;
+    border: none;
+    color: #fff;
+    font-size: 1rem;
+    margin: 10px 5px;
+    padding: 10px 0;
+    width: 100px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.arr-btn:hover {
+    background-color: #4c7ba3;
+}
+
+.stats-area {   
+    display: flex;
+    flex-direction: column;
+    margin: 15px 0 5px 0;
+    width: 350px;
+}
+
+.stats-area p {
+    padding: 5px 10px;
+    color: #3b6080;
+}
+
+.stats-area p:nth-child(even) {
+    background-color: var(--lightslate);
+}
+
+.num-text{
+    color: var(--orange);
+    margin-left: 25px;
+    float: right;
+}
+
+.hide {
+    display: none;
+}
