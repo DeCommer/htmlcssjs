@@ -21,6 +21,7 @@ body {
 
 .content {
     display: none;
+    text-align: center;
 }
 
 #m-btn {
@@ -29,6 +30,7 @@ body {
     color: white;
     font-size: 1.2rem;
     padding: 15px;
+    margin-top: 20px;
     border: none;
     border-radius: 5px;
     box-shadow: 3px 3px 3px #000;
@@ -36,7 +38,6 @@ body {
 
 .reset-btn {
     position: relative;
-    left: 85%;
     background-color: #3b6080;
     color: white;
     font-size: 1.2rem;
@@ -44,6 +45,10 @@ body {
     border: none;
     border-radius: 5px;
     box-shadow: 3px 3px 3px #000;
+}
+
+.reset-btn:hover {
+    background-color: #4c7ba3;
 }
 
 @media(max-width: 800px) {
