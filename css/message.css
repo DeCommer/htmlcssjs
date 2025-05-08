@@ -13,7 +13,7 @@ body {
 
 #myText {
     display: none;
-    font-family: "Comic Sans MS", "Comic Sans", cursive;
+    font-family: "Comic Sans MS", "Comic Sans", Arial, Helvetica, sans-serif;
     font-size: 5rem;
     color: #f8d71c;
     text-shadow: 2px 2px 3px #000;
@@ -50,6 +50,11 @@ body {
     .content {
         text-align: center;
     }
+
+    #myText {
+        font-size: 2rem;
+    }
+
     .reset-btn {
         margin-top: 20px;
         left: 0;
