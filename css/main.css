@@ -72,3 +72,17 @@ ul {
 .nav-link {
     color: #3b6080;
 }
+
+.btn {
+    margin: 10px;
+    padding: 5px 20px;
+    border: none;
+    background-color: #3b6080;
+    font-size: 1.3rem;
+    color: #fff;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: #4c7ba3;
+}

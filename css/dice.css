@@ -1,0 +1,41 @@
+img {
+    width: 200px;
+}
+
+.app-container {
+    /* border: 1px solid rgb(38, 110, 192); */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: fit-content;
+    margin: 200px auto 10px auto;
+}
+
+.title {
+    color: #e7d806;
+    text-shadow: 1px 1px 2px #000;
+    margin-bottom: 20px;
+}
+
+.dice-container {
+    display: flex;
+    flex-direction: row;
+}
+
+.message-container {
+    /* border: 1px solid gold; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 55px;
+    font-size: 1.3rem;
+    text-align: center;
+    color:#355c7e;
+}
+
+.special-txt {
+    color:rgb(50, 240, 161);
+    text-shadow: 1px 1px 2px #000;
+}
+

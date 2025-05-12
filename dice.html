@@ -5,16 +5,29 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dice Roller</title>
     <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/dice.css">
     <link rel="shortcut icon" href="#">
     <script src="./js/main.js" defer></script>
-    <script src="./js/practice.js" defer></script>
+    <script src="./js/dice.js" defer></script>
 </head>
     <body>
         <nav class="nav-bar">
             <a class="nav-link" href="./index.html">home</a>
         </nav>
-        <div class="main-container">
+        <div class="app-container">
+            <h1 class="title">Super Dice Roller 9000!</h1>
+            <div class="dice-container">
+                <div class="d-1" id="d-1"></div>
+                <div class="d-2" id="d-2"></div>
+            </div>
 
+            <div class="message-container">
+                <p class="special-txt" id="special-txt"></p>
+                <p class="message-text" id="message-text"></p>
+            </div>
+            <div class="button-container">
+                <button id="roll-btn" class="btn">Roll</button>
+            </div>
         </div>
     </body>
 </html>
