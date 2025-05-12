@@ -7,11 +7,11 @@
 }
 
 .title {
-    color:#3b6080;
+    color:var(--main);
 }
 
 .array-area {
-    color: #3b6080;
+    color: var(--main);
     font-size: 1.3rem;
     text-align: center;
     max-width: 550px;
@@ -30,9 +30,9 @@
 }
 
 input {
-    background-color: #a1c3e2;
-    border: 1px solid #3b6080;
-    color: #fff;
+    background-color: var(--bg);
+    border: 1px solid var(--main);
+    color: var(--main);
     font-size: 1.2rem;
     text-align: center;
     padding: 3px 0;
@@ -55,7 +55,7 @@ input {
 }
 
 .arr-btn {
-    background-color: #3b6080;;
+    background-color: var(--main);
     border: none;
     color: #fff;
     font-size: 1rem;
@@ -67,7 +67,8 @@ input {
 }
 
 .arr-btn:hover {
-    background-color: #4c7ba3;
+    background-color: var(--highlight);
+    color: var(--lowlight)
 }
 
 .stats-area {   
@@ -79,15 +80,15 @@ input {
 
 .stats-area p {
     padding: 5px 10px;
-    color: #3b6080;
+    color: var(--main);
 }
 
 .stats-area p:nth-child(even) {
-    background-color: var(--lightslate);
+    background-color: var(--highlight);
 }
 
 .num-text{
-    color: var(--orange);
+    color: var(--lowlight);
     margin-left: 25px;
     float: right;
 }

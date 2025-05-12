@@ -12,8 +12,8 @@ img {
 }
 
 .title {
-    color: #e7d806;
-    text-shadow: 1px 1px 2px #000;
+    color: var(--highlight);
+    text-shadow: 1px 1px 2px var(--dark);
     margin-bottom: 20px;
 }
 
@@ -31,11 +31,11 @@ img {
     height: 55px;
     font-size: 1.3rem;
     text-align: center;
-    color:#355c7e;
+    color: var(--main);
 }
 
 .special-txt {
-    color:rgb(50, 240, 161);
-    text-shadow: 1px 1px 2px #000;
+    color:var(--pos);
+    text-shadow: 1px 1px 2px var(--dark);
 }
 

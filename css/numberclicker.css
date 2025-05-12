@@ -1,16 +1,17 @@
 
-.number-disp {
+.number-disp p {
     text-align: center;
     font-size: 10rem;
     font-family: Arial, Helvetica, sans-serif;
-    color: #588ebe;
+    text-shadow: 2px 2px 2px var(--dark);
+    color: var(--highlight);
 }
 
 .btn {
     border: none;
     border-radius: 10px;
-    color: aliceblue;
-    background-color: #588ebe;
+    color: var(--bg);
+    background-color: var(--main);
     height: 2rem;
     width: 4rem;
     margin: 0px 10px;
@@ -19,5 +20,5 @@
 }
 
 p {
-    color: #588ebe;
+    color: var(--main);
 }
