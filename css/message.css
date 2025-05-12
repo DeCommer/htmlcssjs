@@ -16,12 +16,14 @@ body {
     font-family: "Comic Sans MS", "Comic Sans", Arial, Helvetica, sans-serif;
     font-size: 5rem;
     color: #f8d71c;
-    text-shadow: 2px 2px 3px #000;
+    text-shadow: 1px 1px 1px #000;
+    margin-bottom: 20px;
 }
 
 .content {
     display: none;
     text-align: center;
+    
 }
 
 #m-btn {
@@ -32,19 +34,19 @@ body {
     padding: 15px;
     margin-top: 20px;
     border: none;
-    border-radius: 5px;
-    box-shadow: 3px 3px 3px #000;
+    cursor: pointer;
+}
+
+#m-btn:hover {
+    background-color: #4c7ba3;
 }
 
 .reset-btn {
-    position: relative;
     background-color: #3b6080;
     color: white;
     font-size: 1.2rem;
     padding: 5px 15px;
-    border: none;
-    border-radius: 5px;
-    box-shadow: 3px 3px 3px #000;
+
 }
 
 .reset-btn:hover {
