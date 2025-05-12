@@ -2,8 +2,6 @@ const rollBtn = document.getElementById("roll-btn");
 const message = document.getElementById("message-text");
 const special = document.getElementById("special-txt");
 
-
-
 function rollDice() {
     let dice1 = Math.floor(Math.random() * 6) + 1;
     let dice2 = Math.floor(Math.random() * 6) + 1;
@@ -31,7 +29,6 @@ function rollDice() {
     }
 }
 rollDice();
-
 
 rollBtn.addEventListener('click', () => {
     rollDice();

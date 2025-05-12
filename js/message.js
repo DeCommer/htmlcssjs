@@ -2,8 +2,6 @@ const butt = document.getElementById('m-btn');
 const content = document.querySelector('.content');
 const text = document.getElementById('myText');
 
-const resetBtn = document.getElementById('reset');
-
 function flashText(elementId, interval) {
   const element = document.getElementById(elementId);
   if (element) {
@@ -27,6 +25,3 @@ butt.addEventListener('click', () => {
     console.log("test");
 });
 
-resetBtn.addEventListener('click', () =>{
-    window.location.reload();
-})
