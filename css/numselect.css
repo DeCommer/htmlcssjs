@@ -1,0 +1,10 @@
+
+.num-container {
+    margin: 50px auto;
+    padding: 10px;
+    border: 1px solid red;
+    width: 65%;
+    display: flex;
+    justify-content: space-between;
+    font-size: 3rem;
+}

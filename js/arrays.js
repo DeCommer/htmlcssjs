@@ -16,7 +16,6 @@ let min = document.getElementById("min-val-in");
 let max = document.getElementById("max-val-in");
 let message = document.getElementById('message');
 
-
 function randomIntArray() {
     let arrLength = document.getElementById("arr-len-in").value;
     let min = document.getElementById("min-val-in").value;
@@ -49,13 +48,13 @@ function largestNumberInArray(arr) {
 };
 
 function smallestNumberInArray(arr) {
-	let maxVal = arr[0];
+	let minVal = arr[0];
 	for(let i = 1; i < arr.length; i++) {
-		if(arr[i] < maxVal) {
-			maxVal = arr[i];
+		if(arr[i] < minVal) {
+			minVal = arr[i];
 		}
 	}
-	return maxVal;
+	return minVal;
 };
 
 function sumNumbersInArray(arr) {
