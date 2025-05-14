@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trade Risk</title>
+    <link rel="stylesheet" href="./stockeval.css">
+    <link rel="stylesheet" href="../../css/main.css">
+    <script src="./stockeval.js" defer></script>
+</head>
+<body>
+    <nav class="nav-bar">
+        <a class="nav-link" href="../../index.html">Home</a>
+    </nav>
+    
+    <div class="app-container">
+        <div class="title-container">
+            <h1 class="title">Trade Risk Calulator</h1>
+        </div>
+        <div class="input-container">
+            <div class="top">
+                <div class="cell">
+                    <label class="in-label">Entry Price</label>
+                    <input class="input" id="entry-in" type="number">
+                </div>
+                <div class="cell">
+                    <label class="in-label">Target Price</label>
+                    <input class="input" id="target-in" type="number">
+                </div>
+            </div>
+            <div class="bottom">
+                <div class="cell">
+                    <label class="in-label">Stop Loss</label>
+                    <input class="input" id="stop-in" type="number">
+                </div>
+                <div class="cell">
+                    <label class="in-label">Number of Shares</label>
+                    <input class="input" id="shares-in" type="number">
+                </div>
+            </div>
+        </div>
+        <div class="btn-container">
+            <button class="btn" id="enter-btn">Enter</button>
+            <button class="btn" id="clear-btn">clear</button>
+        </div>
+        <div class="results-container hide">
+            <p class="results-txt profit-txt"></p>
+            <p class="results-txt cost-txt"></p>
+            <p class="results-txt risk-txt"></p>
+        </div>
+    </div>
+</body>
+</html>
