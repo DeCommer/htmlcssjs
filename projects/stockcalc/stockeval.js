@@ -11,16 +11,21 @@ const resultsShowHide = document.querySelector(".results-container");
 
 function formatNumber(num) {
     return num.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
-} 
+}
 
-enterBtn.addEventListener('click', () => {
+function run() {
     const profit = parseFloat((targetIn.value - entryIn.value) * sharesIn.value).toFixed(2);
     const cost = parseFloat(entryIn.value * sharesIn.value).toFixed(2);
     const risk = parseFloat((stopIn.value - entryIn.value) * sharesIn.value).toFixed(2);
     profitText.innerHTML = `Profit: <span class="money-text green">$${formatNumber(profit)}</span>`;
     costText.innerHTML = `Cost: <span class="money-text yellow">$${formatNumber(cost)}</span>`;
     riskText.innerHTML = `Risk: <span class="money-text red">$${formatNumber(risk)}</span>`;
-    resultsShowHide.classList.remove("hide");
+}
+
+run();
+
+enterBtn.addEventListener('click', () => {
+    run();
 });
 
 clearBtn.addEventListener('click', () => {
@@ -28,7 +33,10 @@ clearBtn.addEventListener('click', () => {
     entryIn.value = null;
     stopIn.value = null;
     sharesIn.value = null;
-    resultsShowHide.classList.add("hide");
+
+    profitText.innerHTML = `Profit: <span class="money-text green">$0.00</span>`;
+    costText.innerHTML = `Cost: <span class="money-text yellow">$0.00</span>`;
+    riskText.innerHTML = `Risk: <span class="money-text red">$0.00</span>`;
 });
 
 

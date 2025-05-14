@@ -1,6 +1,10 @@
+
+
 .app-container {
     text-align: center;
-    /* border: 1px solid red; */
+    border: 1px solid var(--main);
+    box-shadow: 1px 2px 5px #00000050;
+    border-radius: 10px;
     width: fit-content;
     margin: 100px auto;
     padding: 10px;
@@ -12,13 +16,24 @@
 }
 
 .title {
+    font-size: 4rem;
     margin-bottom: 20px;
+    color: var(--highlight);
+    text-shadow: 1px 1px 1px #000;
 }
 
 .input-container {
-    /* border: 1px solid blue; */
+    border: 1px solid blue;
+    border-radius: 10px;
+    width: 90%;
+    margin: 0 auto;
     display: flex;
     flex-direction: column;
+    align-items: center;
+}
+
+input {
+    color: var(--main);
 }
 
 .cell {
@@ -38,10 +53,14 @@
     display: flex;
 }
 
+label {
+    font-size: 1.2rem;
+}
+
 .input {
     margin: 10px;
-    font-size: 2rem;
-    width: 125px;
+    font-size: 4rem;
+    width: 250px;
     text-align: center;
 }
 
@@ -57,13 +76,13 @@
     border-radius: 5px;
     display: flex;
     flex-direction: column;
-    text-align: justify;
+    text-align: right;
     width: fit-content;
     margin: 25px auto;
 }
 
 .results-txt {
-    font-size: 2rem;
+    font-size: 4rem;
 }
 
 .results-txt {
@@ -71,12 +90,12 @@
 }
 
 .green {
-    color: #489613;
+    color: #61c91c;
 }
 .yellow {
-    color: #a58b18;
+    color: #d1af19;
 }
 .red {
-    color: var(--neg);
+    color: #c72727;
 }
 
