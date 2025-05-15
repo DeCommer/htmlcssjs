@@ -7,7 +7,7 @@ const clearBtn = document.getElementById('clear-btn');
 const profitText = document.querySelector(".profit-txt");
 const costText = document.querySelector(".cost-txt");
 const riskText = document.querySelector(".risk-txt");
-const resultsShowHide = document.querySelector(".results-container");
+
 
 function formatNumber(num) {
     return num.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
