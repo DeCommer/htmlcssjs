@@ -67,6 +67,12 @@ a:hover {
     background-size: cover;
     background-position-y: -125px;
     background-repeat: no-repeat;
+    padding: 10px;
+}
+
+.cta-text {
+    color: #fff;
+    font-size: 5rem;
 }
 
 section {
