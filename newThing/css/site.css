@@ -59,12 +59,12 @@ a:hover {
     width: 90%;
 }
 
-
 .center-img {
     width: 80%;
     height: 250px;
     margin: 0 auto;
     background-image: url('/newThing/assets/nature-1.jpg');
+    border-radius: 10px 150px 150px 10px;
     background-size: cover;
     background-position-y: -125px;
     background-repeat: no-repeat;
@@ -77,8 +77,8 @@ a:hover {
 }
 
 section {
-    border: 1px solid #aeb1c7;
-    background-color: #f6f8ff;
+    border: 1px solid #ecded5;
+    background-color: #fdf9f5;
     border-radius: 10px;
     margin: 10px 15px;
     padding: 15px;
