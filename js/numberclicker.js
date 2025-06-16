@@ -35,7 +35,7 @@ const setInterval = () => {
     let intervalAmount = intervalIn.value;
     if(intervalAmount == clickAmount) {
         intervalincr++;
-        intervalAmount = clickAmount
+        intervalAmount = clickAmount 
         intervalTxt.innerHTML = intervalincr;
         console.log(`Interval: ${intervalAmount}`);
         console.log(`click: ${clickAmount}`);
