@@ -1,69 +1,58 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>Number Clicker with Sets</title>
-<style>
-  body { font-family: Arial, sans-serif; padding: 20px; }
-  button { font-size: 20px; padding: 10px 20px; }
-  input { font-size: 18px; width: 60px; text-align: center; }
-  .status { margin-top: 20px; font-size: 24px; }
-</style>
+  <meta charset="UTF-8">
+  <title>Number Clicker</title>
+  <style>
+    body {
+      font-family: sans-serif;
+      text-align: center;
+      margin-top: 50px;
+    }
+    input, button {
+      font-size: 18px;
+      margin: 10px;
+    }
+  </style>
 </head>
 <body>
 
-<h2>Number Clicker</h2>
+  <h1>Number Clicker</h1>
 
-<label for="setSizeInput">Set Size: </label>
-<input type="number" id="setSizeInput" min="1" value="10" />
-<button id="clickBtn">Click me!</button>
+  <label for="setSize">Enter Set Size:</label>
+  <input type="number" id="setSize" min="1" value="5" />
+  <br />
 
-<div class="status">
-  <p>Clicks in current set: <span id="currentCount">0</span></p>
-  <p>Sets completed: <span id="setsCompleted">0</span></p>
-</div>
+  <button onclick="handleClick(1)">+</button>
+  <button onclick="handleClick(-1)">-</button>
 
-<script>
-  const setSizeInput = document.getElementById('setSizeInput');
-  const clickBtn = document.getElementById('clickBtn');
-  const currentCountSpan = document.getElementById('currentCount');
-  const setsCompletedSpan = document.getElementById('setsCompleted');
+  <h2>Total Clicks: <span id="totalClicks">0</span></h2>
+  <h2>Completed Sets: <span id="completedSets">0</span></h2>
 
-  let currentCount = 0;
-  let setsCompleted = 0;
-  let setSize = parseInt(setSizeInput.value, 10);
+  <script>
+    let totalClicks = 0;
+    let setSize = parseInt(document.getElementById('setSize').value, 10);
 
-  setSizeInput.addEventListener('change', () => {
-    const newSize = parseInt(setSizeInput.value, 10);
-    if (newSize > 0) {
-      setSize = newSize;
-      // Reset counters on set size change (optional)
-      currentCount = 0;
-      setsCompleted = 0;
+    document.getElementById('setSize').addEventListener('change', () => {
+      const val = parseInt(document.getElementById('setSize').value, 10);
+      if (!isNaN(val) && val > 0) {
+        setSize = val;
+        updateDisplay();
+      }
+    });
+
+    function handleClick(amount) {
+      totalClicks += amount;
       updateDisplay();
-    } else {
-      alert('Set size must be greater than 0');
-      setSizeInput.value = setSize;
     }
-  });
 
-  clickBtn.addEventListener('click', () => {
-    currentCount++;
-    if (currentCount >= setSize) {
-      setsCompleted++;
-      currentCount = 0;
+    function updateDisplay() {
+      document.getElementById('totalClicks').textContent = totalClicks;
+      const positiveClicks = Math.max(totalClicks, 0);
+      const completedSets = Math.floor(positiveClicks / setSize);
+      document.getElementById('completedSets').textContent = completedSets;
     }
-    updateDisplay();
-  });
-
-  function updateDisplay() {
-    currentCountSpan.textContent = currentCount;
-    setsCompletedSpan.textContent = setsCompleted;
-  }
-
-  updateDisplay();
-</script>
+  </script>
 
 </body>
 </html>
